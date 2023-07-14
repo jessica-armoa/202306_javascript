@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin: 0 auto;
+  width: 80%;
+}
+
+header{
+  width: 100%;
+}
+
+h1{
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+h2{
+  text-align: center;
+}
+
+.feed{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.profile{
+  flex: 1;
+  border: 1px solid;
+  margin: 0 10px 0 0;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.news{
+  flex: 3;
+}
+
+.card{
+  border: 1px solid;
+  margin: 0 0 10px 0;
+  padding: 10px;
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+p.name{
+  flex: 1;
+  font-size: large;
+  font-weight: bold;
+}
+.likes{
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button{
+  box-shadow: 3px 2px black;
+  background-color:khaki;
+  padding: 5px 10px;
+}
