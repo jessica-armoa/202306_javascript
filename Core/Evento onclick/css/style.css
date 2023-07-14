@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+}
+
+button{
+  box-shadow: 3px 3px black;
+  padding: 5px;
+}
+
+button.likes{
+  width: 70%;
+  margin: 0 auto;
+  margin-top:10px;
+  background-color:khaki;
+}
+
+button#log{
+  background-color:cornflowerblue;
+  color: white;
+}
+
+button#add-definition {
+  background-color:darkseagreen;
+}
+
+header{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: lightgray;
+}
+
+#search{
+  width: 40%;
+}
+
+.container{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+}
+
+.left{
+  flex: 2;
+  margin: 10px 10px 0 0;
+}
+
+.right{
+  flex: 1;
+  margin-top: 20px;
+}
+
+.card{
+  border: 1px solid black;
+  margin: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.datos{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding: 5px;
+}
+.definition{
+  flex: 3;
+}
+
+.cont{
+  border: 1px solid black;
+  padding: 10px;
+}
