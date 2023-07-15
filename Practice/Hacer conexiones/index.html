@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Perfil</title>
+</head>
+<body>
+  <div class="nav">
+    <div class="nav-content">
+      <h1 class="nav-title">Profile</h1>
+      <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#" class="active">My Profile</a></li>
+          <li><a href="#">Find Conections</a></li>
+      </ul>
+    </div>
+    <button class="btn">Sign Out</button>
+  </div>
+
+  <div class="perfil">
+    <div class="izquierda">
+      <div class="container">
+        <div class="cabecera">
+          <img id="profile" src="images/jane-m.jpg" alt="user image">
+        </div>
+        <div class="datos">
+          <h3 id="name">Jane Doe</h3>
+          <p><img class="icon location" src="icons/map-marker.png" alt="location image">Seattle</p>
+
+          <div class="informacion">
+            <p>Developer | Engineer | Problem solver</p>
+            <p>Master of shadows and the internet!</p>
+          </div>
+
+          <a href="#" class="link" onclick=changeName()><img class="icon gear" src="icons/gear.png" alt="">edit profile</a>
+        </div>
+      </div>
+
+      <div class="education caja">
+        <div class="titulo">
+          <h4>Education</h4>
+        </div>
+        <div class="info">
+          <p class="titulo">Coding Dojo - Full Stack Bootcamp</p>
+          <p class="gris">Dec 2019 - Mar 2020</p>
+          <p>Triple black belt in Python, MERN, and c#</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="derecha">
+      <div class="requests caja">
+        <div class="titulo">
+          <span class="notificacion" id="span_request">2</span>
+          <h4>Connection Requests</h4>
+        </div>
+        <div class="info">
+          <div class="request" id="request1">
+            <div class="datos-user">
+              <img class="profile" src="images/todd-s.jpg" alt="User">
+              <p>Todd S</p>
+            </div>
+            <div class="botones">
+              <button class="options" onclick='accept("#request1")'>
+                <img class="icon-options" src="icons/accept-circle.png" alt="accept button">
+              </button>
+              <button class="options" onclick='decline("#request1")'>
+                <img class="icon-options" src="icons/close-circle.png" alt="close button">
+              </button>
+            </div>
+          </div>
+
+          <div class="request" id="request2">
+            <div class="datos-user">
+              <img class="profile" src="images/phil-s.jpg" alt="User">
+              <p>Phil K</p>
+            </div>
+            <div class="botones">
+              <button class="options" onclick='accept("#request2")'>
+                <img class="icon-options" src="icons/accept-circle.png" alt="accept button">
+              </button>
+              <button class="options" onclick='decline("#request2")'>
+                <img class="icon-options" src="icons/close-circle.png" alt="close button">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="conections caja">
+        <div class="titulo">
+          <span class="notificacion">418</span>
+          <h4>Your Connections</h4>
+        </div>
+        <div class="info">
+          <div class="datos-user">
+            <img class="profile" src="images/adrien-s.jpg" alt="User">
+            <p>Adrien D</p>
+          </div>
+          <div class="datos-user">
+            <img class="profile" src="images/anne-s.jpg" alt="User">
+            <p>Anne J</p>
+          </div>
+          <div class="datos-user">
+            <img class="profile" src="images/alayne-s.jpg" alt="User">
+            <p>Alayne</p>
+          </div>
+          <div class="datos-user">
+            <img class="profile" src="images/arry-s.jpg" alt="User">
+            <p>Arry Y</p>
+          </div>
+        </div>
+        <div class="info">
+          <a href="#" class="link">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
